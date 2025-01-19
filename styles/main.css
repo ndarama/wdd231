@@ -1,199 +1,209 @@
-/* Reset/Global */
+/* Color variables */
+:root {
+  --color-primary: #d0021b;    /* Red */
+  --color-secondary: #ffc107;  /* Gold */
+  --color-background: #f8f8f8; /* Light background */
+  --color-text: #333333;       /* Dark text */
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: #f8f8f8;
-    color: #333;
-  }
-  
-  /* HEADER */
-  header {
-    background-color: #18344f; /* dark navy/blue */
-    color: #ffffff;
-    padding: 1rem;
-  }
-  
-  .profile-banner {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-  
-  .profile-pic {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%; /* optional: circular image */
-    object-fit: cover;
-  }
-  
-  /* NAVIGATION */
-  nav {
-    position: relative;
-    margin-top: 1rem; /* space under profile banner */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* HEADER */
+header {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  padding: 1rem;
+}
+
+/* Center the header content */
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Profile photo styling */
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+/* NAVIGATION */
+nav {
+  position: relative;
+  /* margin-top: 1rem; you can remove or keep if you'd like spacing */
+}
+
+/* Center the nav menu horizontally */
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 0.25rem 0.5rem;
+}
+
+.nav-menu li a.active {
+  color: var(--color-secondary);
+}
+
+.nav-menu li a:hover {
+  text-decoration: underline;
+}
+
+/* Hamburger hidden on desktop */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+  /* If you want the hamburger in the center, you can do:
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  */
+}
+
+/* MAIN, .top-sections, etc. remain as before */
+main {
+  max-width: 1100px;
+  margin: 1rem auto;
+  padding: 0 1rem;
+}
+
+.top-sections {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.top-sections section {
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+section h2 {
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.highlight img {
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.certificate-section {
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  justify-content: center; /* center filter buttons if desired */
+}
+
+.filters button {
+  background-color: var(--color-secondary);
+  color: var(--color-text);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filters button:hover {
+  filter: brightness(0.9);
+}
+
+/* Course cards */
+.course-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.course-card {
+  background-color: var(--color-primary);
+  color: #fff;
+  width: 100px;
+  text-align: center;
+  border-radius: 4px;
+  padding: 0.75rem;
+}
+
+.course-card.completed {
+  background-color: #666;
+}
+
+footer {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive Nav */
+@media (max-width: 768px) {
+  .hamburger {
+    display: inline-block;
   }
   
   .nav-menu {
-    display: flex;
-    list-style-type: none;
-    gap: 2rem;
-  }
-  
-  /* Desktop nav: inline horizontally */
-  .nav-menu > li > a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 700;
-    padding: 0.25rem 0.5rem;
-  }
-  
-  .nav-menu > li > a:hover {
-    text-decoration: underline;
-  }
-  
-  /* .active link style */
-  .nav-menu > li > a.active {
-    color: #ff0;
-  }
-  
-  /* Hamburger button hidden by default on wide screens */
-  .hamburger {
     display: none;
-    background: none;
-    border: none;
-    color: #ffffff;
-    font-size: 1.5rem;
-    cursor: pointer;
-  }
-  
-  /* MAIN */
-  main {
-    margin: 1rem auto;
-    max-width: 1100px;
-  }
-  
-  /* Two-column layout for top sections */
-  .top-sections {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 1rem;
-    margin-bottom: 2rem;
-  }
-  
-  .top-sections section {
-    background-color: #ffffff;
-    border-radius: 4px;
-    padding: 1rem;
-  }
-  
-  /* Headings to match your color scheme */
-  section h2 {
-    background-color: #1c4e6b; /* teal/blue color for heading background */
-    color: #fff;
-    padding: 0.5rem;
-    border-radius: 4px;
-  }
-  
-  /* Image in highlight section */
-  .highlight img {
+    flex-direction: column;
+    background-color: var(--color-primary);
+    position: absolute;
+    top: 60px;
+    left: 0;
     width: 100%;
-    border-radius: 4px;
-    display: block;
-    margin-bottom: 0.5rem;
-  }
-  
-  /* CERTIFICATE SECTION */
-  .certificate-section {
-    background-color: #dce7ef;
-    padding: 1rem;
-    border-radius: 4px;
-  }
-  
-  /* Filter Buttons */
-  .filters {
-    display: flex;
     gap: 1rem;
-    margin-bottom: 1rem;
+    padding: 1rem 0;
   }
   
-  .filters button {
-    background-color: #000;
-    color: #fff;
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-  
-  .filters button:hover {
-    background-color: #333;
-  }
-  
-  /* Course Cards */
-  .course-cards {
+  .nav-menu.open {
     display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: flex-start;
   }
   
-  .course-card {
-    width: 120px;
-    background-color: #6b3c00; /* dark brown */
-    color: #fff;
-    padding: 0.75rem;
-    text-align: center;
-    border-radius: 4px;
+  .top-sections {
+    grid-template-columns: 1fr;
   }
-  
-  /* Example for completed courses vs not */
-  .course-card.completed {
-    background-color: #ccc; 
-    color: #000;
-  }
-  
-  /* FOOTER */
-  footer {
-    background-color: #18344f;
-    color: #ffffff;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-  }
-  
-  footer p {
-    margin: 0.25rem 0;
-  }
-  
-  /* RESPONSIVE NAV (Mobile) */
-  @media (max-width: 768px) {
-    .nav-menu {
-      display: none; /* hide large menu */
-      flex-direction: column;
-      background-color: #18344f;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      width: 100%;
-      gap: 1rem;
-      padding: 1rem 0;
-    }
-    
-    .nav-menu.open {
-      display: flex; /* show when hamburger is toggled */
-    }
-    
-    .hamburger {
-      display: inline-block;
-    }
-    
-    /* Single column for top sections */
-    .top-sections {
-      grid-template-columns: 1fr;
-    }
-  }
-  
+}

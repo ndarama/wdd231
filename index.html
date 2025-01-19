@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
   <meta charset="UTF-8">
-  <title>Home Page | WDD 231 - NDARAMA Mark</title>
+  <title>NDARAMA Mark - WDD 231</title>
   <meta name="description" content="This is NDARAMA Mark's WDD 231 Home Page, showcasing course work, assignments, and projects.">
   <meta name="author" content="NDARAMA Mark">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -17,28 +17,32 @@
 </head>
 <body>
   <header>
-    <div class="profile-banner">
-      <!-- Profile image (replace with your own image inside images/ folder) -->
+    <div class="header-content">
       <img 
         src="images/profile.jpg" 
-        alt="Profile Photo of Ndarama" 
+        alt="Profile Photo" 
         class="profile-pic"
       >
       <h1>NDARAMA Mark - WDD 231</h1>
     </div>
     <nav>
-      <button id="hamburgerBtn" class="hamburger" aria-label="Open Menu">&#9776;</button>
+      <button 
+        id="hamburgerBtn" 
+        class="hamburger" 
+        aria-label="Open Menu"
+      >
+        &#9776;
+      </button>
       <ul id="primaryNav" class="nav-menu">
         <li><a href="#" class="active">Home</a></li>
         <li><a href="#">Chamber</a></li>
-        <li><a href="https://github.com/ndarama" target="_blank">Github</a></li>
-        <li><a href="https://www.linkedin.com/in/ndarama/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/ndarama">GitHub Profile</a></li>
+        <li><a href="https://www.linkedin.com/in/ndarama/">LinkedIn</a></li>
       </ul>
     </nav>
   </header>
   
   <main>
-    <!-- Two-column area -->
     <div class="top-sections">
       <section class="course-work">
         <h2>Course Work</h2>
@@ -50,36 +54,31 @@
       </section>
       
       <section class="highlight">
-        <h2>Kigali, Rwanda</h2>
+        <h2>Toloria, Madagascar</h2>
         <figure>
-          <img 
-            src="images/kigali.jpg" 
-            alt="Kigali Rwanda"
-          >
-          <figcaption>Kigali City</figcaption>
+          <img src="images/kigali.jpg" alt="City of Kigali">
+          <figcaption>City of Kigali</figcaption>
         </figure>
       </section>
     </div>
     
-    <!-- Certificate Section -->
     <section class="certificate-section">
-      <h2>Web and Computer Programming Certificate</h2>
+      <h2>Web & Computer Programming Certificate</h2>
       
-      <!-- Filter buttons -->
       <div class="filters">
         <button id="allBtn">All</button>
         <button id="cseBtn">CSE</button>
         <button id="wddBtn">WDD</button>
       </div>
-      
-      <!-- Dynamic course container -->
       <div id="courseCards" class="course-cards"></div>
-      
+      <p>Total Credits: <span id="totalCredits">0</span></p>
     </section>
   </main>
   
   <footer>
-    <p>&copy; <span id="currentyear"></span> NDARAMA Mark | Rwanda</p>
+    <p>
+      &copy; <span id="currentyear"></span> NDARAMA Mark | Rwanda
+    </p>
     <p id="lastModified"></p>
   </footer>
 </body>
