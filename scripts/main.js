@@ -1,64 +1,61 @@
-// JavaScript for dynamic elements and interactivity
+/* main.js */
 
-// Dynamically display the current year in the footer
-const currentYearElement = document.getElementById("currentyear");
-currentYearElement.textContent = new Date().getFullYear();
+// 1. Hamburger toggle
+const hamburgerBtn = document.getElementById("hamburgerBtn");
+const primaryNav = document.getElementById("primaryNav");
 
-// Dynamically display the last modified date in the footer
-const lastModifiedElement = document.getElementById("lastModified");
-lastModifiedElement.textContent = `Last Update: ${document.lastModified}`;
-
-// Toggle the hamburger menu for small screens
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector("nav ul");
-
-hamburger.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
+hamburgerBtn.addEventListener("click", () => {
+  primaryNav.classList.toggle("open");
 });
 
-// Course filtering logic
+// 2. Dynamic year and last modified
+const currentYearSpan = document.getElementById("currentyear");
+currentYearSpan.textContent = new Date().getFullYear();
+
+const lastModifiedPara = document.getElementById("lastModified");
+lastModifiedPara.textContent = `Last Update: ${document.lastModified}`;
+
+// 3. Course Array
 const courses = [
-    { code: "CSE 110", name: "Introduction to Programming", completed: true },
-    { code: "WDD 130", name: "Web Frontend Development I", completed: true },
-    { code: "CSE 111", name: "Programming with JavaScript", completed: true },
-    { code: "CSE 210", name: "Object-Oriented Programming", completed: false },
-    { code: "WDD 131", name: "Web Frontend Development II", completed: false },
-    { code: "WDD 231", name: "Advanced Web Development", completed: false },
+  { code: "CSE 110", name: "Intro to Programming", completed: false },
+  { code: "WDD 130", name: "Web Fundamentals", completed: true },
+  { code: "CSE 111", name: "Data Structures", completed: false },
+  { code: "CSE 210", name: "OOP Development", completed: false },
+  { code: "WDD 131", name: "Frontend Dev I", completed: true },
+  { code: "WDD 231", name: "Frontend Dev II", completed: false }
 ];
 
-const courseContainer = document.getElementById("courseContainer");
+// 4. Display courses
+const courseCardsContainer = document.getElementById("courseCards");
 
-function displayCourses(filteredCourses) {
-    courseContainer.innerHTML = ""; // Clear existing courses
-
-    filteredCourses.forEach(course => {
-        const courseCard = document.createElement("div");
-        courseCard.className = `course-card ${course.completed ? "completed" : "not-completed"}`;
-        courseCard.textContent = `${course.code} - ${course.name}`;
-        courseContainer.appendChild(courseCard);
-    });
-}
-
-function filterCourses(filter) {
-    let filteredCourses;
-
-    if (filter === "all") {
-        filteredCourses = courses;
-    } else {
-        filteredCourses = courses.filter(course => course.code.startsWith(filter));
+function displayCourses(courseList) {
+  courseCardsContainer.innerHTML = "";
+  courseList.forEach(course => {
+    const card = document.createElement("div");
+    card.classList.add("course-card");
+    // If completed, add a special class
+    if (course.completed) {
+      card.classList.add("completed");
     }
-
-    displayCourses(filteredCourses);
+    card.innerHTML = `
+      <p>${course.code}</p>
+    `;
+    courseCardsContainer.appendChild(card);
+  });
 }
 
-// Initialize with all courses displayed
+// Show all by default
 displayCourses(courses);
 
-// Buttons to filter courses
-const filterButtons = document.querySelectorAll(".filter-buttons button");
-filterButtons.forEach(button => {
-    button.addEventListener("click", (e) => {
-        const filter = e.target.textContent;
-        filterCourses(filter === "All" ? "all" : filter);
-    });
+// Filter buttons
+document.getElementById("allBtn").addEventListener("click", () => {
+  displayCourses(courses);
+});
+document.getElementById("cseBtn").addEventListener("click", () => {
+  const cseOnly = courses.filter(c => c.code.startsWith("CSE"));
+  displayCourses(cseOnly);
+});
+document.getElementById("wddBtn").addEventListener("click", () => {
+  const wddOnly = courses.filter(c => c.code.startsWith("WDD"));
+  displayCourses(wddOnly);
 });
