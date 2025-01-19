@@ -13,7 +13,7 @@ const currentYearSpan = document.getElementById("currentyear");
 currentYearSpan.textContent = new Date().getFullYear();
 
 const lastModifiedPara = document.getElementById("lastModified");
-lastModifiedPara.textContent = `Last Update: ${document.lastModified}`;
+lastModifiedPara.textContent = `Last modification: ${document.lastModified}`;
 
 // 3. Course Array
 const courses = [
