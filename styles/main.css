@@ -1,9 +1,18 @@
-/* Color variables */
+/*
+  main.css
+  Color palette:
+    --color-primary: #d0021b;   (Red)
+    --color-secondary: #ffc107; (Gold)
+    --color-background: #f8f8f8;
+    --color-text: #333333;
+*/
+
+/* 1. CSS Variables */
 :root {
-  --color-primary: #d0021b;    /* Red */
-  --color-secondary: #ffc107;  /* Gold */
-  --color-background: #f8f8f8; /* Light background */
-  --color-text: #333333;       /* Dark text */
+  --color-primary: #820c1a;
+  --color-secondary: #c19103;
+  --color-background: #f8f8f8;
+  --color-text: #333333;
 }
 
 * {
@@ -18,14 +27,14 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* HEADER */
+/* 2. Header */
 header {
   background-color: var(--color-primary);
   color: #ffffff;
   padding: 1rem;
 }
 
-/* Center the header content */
+/* Centered header content (profile + name) */
 .header-content {
   display: flex;
   flex-direction: column;
@@ -33,7 +42,6 @@ header {
   gap: 0.5rem;
 }
 
-/* Profile photo styling */
 .profile-pic {
   width: 80px;
   height: 80px;
@@ -41,18 +49,19 @@ header {
   border-radius: 50%;
 }
 
+/* h1 styling */
 header h1 {
   margin: 0;
   font-size: 1.8rem;
 }
 
-/* NAVIGATION */
+/* 3. Navigation */
 nav {
   position: relative;
-  /* margin-top: 1rem; you can remove or keep if you'd like spacing */
+  /* optionally add margin-top if needed */
 }
 
-/* Center the nav menu horizontally */
+/* The nav menu in desktop view */
 .nav-menu {
   display: flex;
   justify-content: center;
@@ -76,7 +85,7 @@ nav {
   text-decoration: underline;
 }
 
-/* Hamburger hidden on desktop */
+/* Hamburger hidden on desktop by default */
 .hamburger {
   display: none;
   background: none;
@@ -84,20 +93,16 @@ nav {
   font-size: 1.5rem;
   color: #fff;
   cursor: pointer;
-  /* If you want the hamburger in the center, you can do:
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  */
 }
 
-/* MAIN, .top-sections, etc. remain as before */
+/* 4. Main Content */
 main {
   max-width: 1100px;
   margin: 1rem auto;
   padding: 0 1rem;
 }
 
+/* Two-column area for top sections (desktop) */
 .top-sections {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -111,6 +116,7 @@ main {
   padding: 1rem;
 }
 
+/* Heading background inside sections */
 section h2 {
   background-color: var(--color-primary);
   color: #fff;
@@ -119,6 +125,7 @@ section h2 {
   margin-bottom: 0.5rem;
 }
 
+/* Example highlight image styling */
 .highlight img {
   width: 100%;
   border-radius: 4px;
@@ -126,6 +133,7 @@ section h2 {
   margin-bottom: 0.5rem;
 }
 
+/* 5. Certificate Section */
 .certificate-section {
   background-color: #ffffff;
   border-radius: 4px;
@@ -133,11 +141,12 @@ section h2 {
   margin-bottom: 2rem;
 }
 
+/* Filter buttons */
 .filters {
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
-  justify-content: center; /* center filter buttons if desired */
+  justify-content: center; /* center filter buttons */
 }
 
 .filters button {
@@ -153,26 +162,37 @@ section h2 {
   filter: brightness(0.9);
 }
 
-/* Course cards */
+/* 6. Course Cards */
 .course-cards {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
 }
 
+/* Each card */
 .course-card {
   background-color: var(--color-primary);
   color: #fff;
-  width: 100px;
+  width: 150px; /* slightly wider to accommodate images */
   text-align: center;
   border-radius: 4px;
   padding: 0.75rem;
 }
 
+/* Mark completed differently */
 .course-card.completed {
-  background-color: #666;
+  background-color: #666666;
 }
 
+/* Course images inside cards */
+.course-card img.course-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+/* 7. Footer */
 footer {
   background-color: var(--color-primary);
   color: #ffffff;
@@ -181,7 +201,11 @@ footer {
   margin-top: 2rem;
 }
 
-/* Responsive Nav */
+footer p {
+  margin: 0.5rem 0;
+}
+
+/* 8. Responsive Nav (Mobile) */
 @media (max-width: 768px) {
   .hamburger {
     display: inline-block;
@@ -204,6 +228,6 @@ footer {
   }
   
   .top-sections {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* single column */
   }
 }
