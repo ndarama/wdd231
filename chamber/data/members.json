@@ -1,0 +1,92 @@
+[
+  {
+    "name": "The Hub",
+    "address": "123 Sunrise Blvd, Foodtown",
+    "phone": "555-111-2222",
+    "website": "https://sunnycafe.example.com",
+    "logo": "images/logo1.jpg",
+    "membership": 1,
+    "description": "Cozy cafe offering fresh coffee and pastries."
+  },
+  {
+    "name": "Marketing Agency",
+    "address": "456 Muscle St, Fitville",
+    "phone": "555-222-3333",
+    "website": "https://goldengym.example.com",
+    "logo": "images/logo10.jpg",
+    "membership": 3,
+    "description": "24/7 fitness center with classes and personal training."
+  },
+  {
+    "name": "Mechanical Engineer",
+    "address": "789 Silicon Ave, Innovate City",
+    "phone": "555-333-4444",
+    "website": "https://techsolutions.example.com",
+    "logo": "images/logo2.jpg",
+    "membership": 2,
+    "description": "IT consulting and software development."
+  },
+  {
+    "name": "D-Gital",
+    "address": "101 Reading Ln, Booksville",
+    "phone": "555-444-5555",
+    "website": "https://parksidebooks.example.com",
+    "logo": "images/logo3.jpg",
+    "membership": 1,
+    "description": "Independent bookstore with community events."
+  },
+  {
+    "name": "Saint Tech",
+    "address": "202 Tool Way, Hardware City",
+    "phone": "555-555-6666",
+    "website": "https://acehardware.example.com",
+    "logo": "images/logo4.jpg",
+    "membership": 3,
+    "description": "Hardware supplies and home improvement solutions."
+  },
+  {
+    "name": "The Architect",
+    "address": "303 Relax Rd, Wellness Town",
+    "phone": "555-666-7777",
+    "website": "https://silverspa.example.com",
+    "logo": "images/logo5.jpg",
+    "membership": 2,
+    "description": "Full-service spa and wellness center."
+  },
+  {
+    "name": "Real Estate",
+    "address": "404 Bake Blvd, Frostington",
+    "phone": "555-777-8888",
+    "website": "https://creativecakes.example.com",
+    "logo": "images/logo6.jpg",
+    "membership": 1,
+    "description": "Custom cakes for birthdays, weddings, and more."
+  },
+  {
+    "name": "Axion",
+    "address": "505 Garden St, Greentown",
+    "phone": "555-888-9999",
+    "website": "https://greenearth.example.com",
+    "logo": "images/logo7.jpg",
+    "membership": 2,
+    "description": "Eco-friendly landscaping and gardening services."
+  },
+  {
+    "name": "Mechanical Workshop",
+    "address": "606 Motor Ave, Car City",
+    "phone": "555-999-0000",
+    "website": "https://speedyauto.example.com",
+    "logo": "images/logo8.jpg",
+    "membership": 3,
+    "description": "Reliable auto repair and maintenance services."
+  },
+  {
+    "name": "Branding Consultancy",
+    "address": "707 Tech Park, Innovation Hub",
+    "phone": "555-000-1111",
+    "website": "https://digitalvision.example.com",
+    "logo": "images/logo9.jpg",
+    "membership": 1,
+    "description": "Creative digital marketing and social media strategy."
+  }
+]
