@@ -68,5 +68,14 @@ document.addEventListener("DOMContentLoaded", () => {
     gridViewButton.addEventListener("click", () => displayMembers("grid"));
     listViewButton.addEventListener("click", () => displayMembers("list"));
 
+
+  /* Footer Dates */
+const currentYearSpan = document.getElementById("currentyear");
+currentYearSpan.textContent = new Date().getFullYear();
+
+const lastModifiedPara = document.getElementById("lastModified");
+lastModifiedPara.textContent = `Last Modification: ${document.lastModified}`;
+  
+  
     fetchMembers();
-});
+  });

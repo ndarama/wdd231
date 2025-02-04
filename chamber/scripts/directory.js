@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Display members in the chosen layout
   function displayMembers(view) {
-      memberList.innerHTML = ""; // Clear existing content
+      memberList.innerHTML = ""; 
       memberList.classList.remove("grid-view", "list-view");
       memberList.classList.add(view === "grid" ? "grid-view" : "list-view");
 
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
           `;
 
           if (view === "list") {
-              card.classList.add("list-item"); // Add list-specific class
+              card.classList.add("list-item");
           }
 
           memberList.appendChild(card);
@@ -81,6 +81,6 @@ currentYearSpan.textContent = new Date().getFullYear();
 const lastModifiedPara = document.getElementById("lastModified");
 lastModifiedPara.textContent = `Last Modification: ${document.lastModified}`;
 
-  // Fetch members initially
+
   fetchMembers();
 });

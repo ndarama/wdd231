@@ -1,0 +1,456 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    background-color: #820c1a; /* Dark Red */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  /* Logo */
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .logo-container img {
+    max-width: 80px;
+  }
+  
+  /* Navigation */
+  nav {
+    position: relative;
+  }
+  
+  /* Desktop Menu */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ccc;
+    background-color: #c19103; /* Gold */
+  }
+  
+  nav ul li {
+    padding: 10px 20px;
+    border-right: 1px solid #ccc;
+  }
+  
+  nav ul li:last-child {
+    border-right: none;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+  }
+  
+  nav ul li a:hover {
+    color: #ffffff;
+  }
+  
+  /* Hero Section */
+  #hero {
+    position: relative;
+    background: url('../images/hero1.jpg') no-repeat center center / cover; /* Replace with actual image path */
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .hero-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 30px 40px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    max-width: 60%;
+  }
+  
+  .hero-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #c19103;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #a37602;
+  }
+  
+  /* Content Section with Grid Layout */
+#intro-events {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+#intro, #events {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#intro h2, #events h2 {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+#intro p, #events p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.cta-button-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cta-button {
+    padding: 12px 24px;
+    background-color: #c19103;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #a37602;
+}
+
+/* Footer */
+footer {
+    background-color: #f4f4f4;
+    padding: 1em;
+    text-align: center;
+    font-size: 0.9em;
+  }
+
+  #membership-benefits {
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin: 20px 0;
+}
+
+.membership-level {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.membership-level h3 {
+    color: #444;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.membership-level ul {
+    list-style: none;
+    padding: 0;
+}
+
+.membership-level ul li {
+    padding: 5px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.membership-level ul li::before {
+    content: "✔️";
+    margin-right: 8px;
+    color: #0073e6;
+}
+
+
+        /* Weather and Business Spotlight Layout */
+#weather-spotlight {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    align-items: flex-start;
+    max-width: 1440px;
+    height: auto;
+    margin: auto;
+}
+
+#weather-section {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    flex: 1;
+    flex-basis: 33.33%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#weather-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+#weather-section h2 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+    color: #444;
+    font-weight: bold;
+}
+
+#spotlight-section {
+    flex: 2;
+    flex-basis: 66.66%;
+    background-color: #fff;
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+#spotlight-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.spotlight-card {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.spotlight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+.spotlight-card img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.spotlight-card h3 {
+    font-size: 1.4rem;
+    margin: 10px 0;
+    color: #333;
+    font-weight: bold;
+}
+
+.spotlight-card p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.spotlight-card a {
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    background-color: #e6f2ff;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.spotlight-card a:hover {
+    background-color: #cce6ff;
+}
+
+  /* Responsive Design */
+
+@media (max-width: 1024px) {
+    #intro-events {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #intro, #events {
+        width: 100%;
+    }
+
+    #weather-spotlight {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    #weather-section {
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    #spotlight-section {
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    #spotlight-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    #hero {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .hero-text {
+        width: 90%;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+    }
+
+    nav ul li:last-child {
+        border-bottom: none;
+    }
+
+    #intro-events {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .cta-button-section {
+        margin: 15px 0;
+    }
+
+    #weather-spotlight {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #weather-section, #spotlight-section {
+        width: 100%;
+    }
+
+    #spotlight-container {
+        grid-template-columns: 1fr;
+    }
+
+    .spotlight-card {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    #hero {
+        padding: 20px;
+    }
+
+    .hero-text {
+        padding: 20px;
+        font-size: 1.2rem;
+    }
+
+    nav ul {
+        font-size: 0.9rem;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    #membership-benefits {
+        padding: 20px;
+    }
+
+    .membership-level {
+        padding: 15px;
+    }
+
+    .spotlight-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .spotlight-card p {
+        font-size: 0.8rem;
+    }
+
+    .spotlight-card a {
+        padding: 8px 12px;
+    }
+}
