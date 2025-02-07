@@ -547,7 +547,113 @@ p.intro-text {
   font-weight: bold;
   color: #444;
 }
+/* Discover PAGE */
 
+.grid-container {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  grid-template-areas:
+      'sidebar'
+      'cards';
+  grid-template-columns: 1fr;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cards {
+  grid-area: cards;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card-content address {
+  font-style: normal;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.card-content button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #c19103;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-content button:hover {
+  background-color: #c19103;
+}
+
+/* Responsive design for medium screens */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .grid-container {
+      grid-template-areas: 
+          'sidebar sidebar'
+          'cards cards';
+      grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Responsive design for large screens */
+@media (min-width: 1025px) {
+  .grid-container {
+      grid-template-areas: 'sidebar cards';
+      grid-template-columns: 1fr 3fr;
+  }
+}
+
+/* Optional image hover effect (disabled for mobile screens) */
+@media (min-width: 641px) {
+  .card:hover img {
+      filter: brightness(85%);
+      transform: scale(1.05);
+      transition: all 0.3s ease;
+  }
+}
 /* Responsive Design */
 @media (max-width: 768px) {
   .main-container {

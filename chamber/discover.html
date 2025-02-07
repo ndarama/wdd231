@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Discover - Chamber of Commerce</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ndarama Mark">
+    <meta name="description" content="Explore the official directory of businesses for Kigali's Chamber of Commerce.">
+    <meta property="og:title" content="Discover - Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/preview.png">
+    <meta property="og:url" content="https://ndarama.github.io/wdd231/chamber/discover.html">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style1.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+        <img src="images/logoweb.jpg" alt="Chamber Logo">
+    </div>
+    <h1>Discover - Chamber of Commerce</h1>
+    <nav>
+        <ul>
+            <li><a href="https://ndarama.github.io/wdd231/chamber/index.html">Home</a></li>
+            <li><a href="https://ndarama.github.io/wdd231/chamber/discover.html">Discover</a></li>
+            <li><a href="https://ndarama.github.io/wdd231/chamber/directory.html">Business Directory</a></li>
+            <li><a href="https://ndarama.github.io/wdd231/chamber/join.html">Join</a></li>
+        </ul>
+    </nav>
+</header>
+    <main>
+        <main class="grid-container">
+            <aside class="sidebar">
+                <h2>Visitor Information</h2>
+                <p id="visitor-message"></p>
+            </aside>
+    
+            <section class="cards">
+                <div class="card">
+                    <figure>
+                        <img src="images/rwandatravel (1).webp" alt="Coffee House">
+                    </figure>
+                    <div class="card-content">
+                        <h2>Kigali Coffee House</h2>
+                        <address>10 Coffee Street, Kigali, Rwanda</address>
+                        <p>A popular spot serving locally sourced Rwandan coffee and baked goods.</p>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <figure>
+                        <img src="images/rwandatravel (2).webp" alt="Tech Hub">
+                    </figure>
+                    <div class="card-content">
+                        <h2>InnoTech Hub</h2>
+                        <address>25 Innovation Drive, Kigali, Rwanda</address>
+                        <p>A technology incubator providing resources for local tech startups.</p>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <figure>
+                        <img src="images/rwandatravel (3).webp" alt="Handicrafts Market">
+                    </figure>
+                    <div class="card-content">
+                        <h2>Rwanda Handicrafts Market</h2>
+                        <address>45 Artisan Avenue, Kigali, Rwanda</address>
+                        <p>A vibrant marketplace showcasing handmade crafts and souvenirs from across Rwanda.</p>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <figure>
+                        <img src="images/rwandatravel (4).webp" alt="Eco Lodge">
+                    </figure>
+                    <div class="card-content">
+                        <h2>Green Valley Eco Lodge</h2>
+                        <address>77 Safari Road, Kigali, Rwanda</address>
+                        <p>An eco-friendly lodge offering a sustainable experience near national parks.</p>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <figure>
+                        <img src="images/rwandatravel (5).webp" alt="Construction Company">
+                    </figure>
+                    <div class="card-content">
+                        <h2>Apex Construction Ltd.</h2>
+                        <address>12 Builder's Way, Kigali, Rwanda</address>
+                        <p>A leading construction company specializing in commercial and residential projects.</p>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <figure>
+                        <img src="images/rwandatravel (6).webp" alt="Tour Agency">
+                    </figure>
+                    <div class="card-content">
+                        <h2>Explore Rwanda Tours</h2>
+                        <address>5 Adventure Lane, Kigali, Rwanda</address>
+                        <p>A top-rated tour agency offering personalized wildlife and cultural tours.</p>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <figure>
+                        <img src="images/rwandatravel (7).webp" alt="Healthcare Center">
+                    </figure>
+                    <div class="card-content">
+                        <h2>Kigali Healthcare Center</h2>
+                        <address>89 Wellness Street, Kigali, Rwanda</address>
+                        <p>Providing high-quality healthcare services with state-of-the-art facilities.</p>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <figure>
+                        <img src="images/rwandatravel (8).webp" alt="Financial Services">
+                    </figure>
+                    <div class="card-content">
+                        <h2>Rwanda Financial Solutions</h2>
+                        <address>33 Commerce Drive, Kigali, Rwanda</address>
+                        <p>A financial services firm offering investments, insurance, and banking solutions.</p>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <figure>
+                        <img src="images/rwandatravel (9).webp" alt="Education Center">
+                    </figure>
+                    <div class="card-content">
+                        <h2>Bright Future Education Center</h2>
+                        <address>101 Knowledge Way, Kigali, Rwanda</address>
+                        <p>An institution providing education and vocational training programs for all ages.</p>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+                
+            </section>
+        </main>
+    <footer>
+        <p>
+         &copy; <span id="currentyear"></span> | NDARAMA Mark | Kigali, Rwanda
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+  <script src="scripts/home.js" defer></script>
+  <script src="scripts/visitor.js" defer></script>
+</body>
+</html>

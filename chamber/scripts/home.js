@@ -273,3 +273,5 @@ document.getElementById('display-timestamp').textContent = params.get('timestamp
  // Generate current date if timestamp is missing and display it
  const timestamp = params.get('timestamp') || new Date().toLocaleString();
  document.getElementById('display-timestamp').textContent = timestamp;
+
+
