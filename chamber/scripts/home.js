@@ -20,7 +20,7 @@ async function fetchData(url) {
     }
 }
 
-// 1. Members Feature
+// Members Feature
 async function initializeMembersFeature() {
     const memberList = document.getElementById("member-list");
     const gridViewButton = document.getElementById("grid-view");
@@ -73,7 +73,7 @@ async function initializeMembersFeature() {
     }
 }
 
-// 2. Events Feature
+// Events Feature
 function initializeEventsFeature() {
     const eventsContent = document.querySelector(".events-content");
 
@@ -139,7 +139,7 @@ function initializeEventsFeature() {
     }
 }
 
-// 3. Spotlights Feature
+// Spotlights Feature
 async function initializeSpotlightsFeature() {
     const spotlightContainer = document.getElementById("spotlight-container");
 
@@ -192,7 +192,7 @@ function getMembershipBadge(level) {
     }
 }
 
-// 4. Weather Feature
+// Weather Feature
 async function initializeWeatherFeature() {
     const weatherInfo = document.getElementById('weather-info');
 
@@ -258,3 +258,18 @@ function updateFooterDates() {
     document.getElementById("currentyear").textContent = new Date().getFullYear();
     document.getElementById("lastModified").textContent = `Last Modification: ${document.lastModified}`;
 }
+
+updateFooterDates();
+
+// Populate the thank-you page with form data from the query parameters
+const params = new URLSearchParams(window.location.search);
+document.getElementById('display-first-name').textContent = params.get('firstName');
+document.getElementById('display-last-name').textContent = params.get('lastName');
+document.getElementById('display-email').textContent = params.get('email');
+document.getElementById('display-phone').textContent = params.get('phone');
+document.getElementById('display-business-name').textContent = params.get('businessName');
+document.getElementById('display-timestamp').textContent = params.get('timestamp');
+
+ // Generate current date if timestamp is missing and display it
+ const timestamp = params.get('timestamp') || new Date().toLocaleString();
+ document.getElementById('display-timestamp').textContent = timestamp;
