@@ -54,6 +54,7 @@
 
             <label for="membership-level">Membership Level:</label>
             <select id="membership-level" name="membershipLevel" required>
+                <option value="" disabled selected>Select a membership level</option>
                 <option value="np">Non Profits Membership</option>
                 <option value="regular">Regular Membership</option>
                 <option value="silver">Silver Membership</option>
@@ -71,7 +72,7 @@
     <!-- Membership Section -->
     <section id="membership-cards">
         <h2>Membership Levels & Benefits</h2>
-        <div class="membership-card" id="regular-card">
+        <div class="membership-card" id="np-card">
             <h3>Non Profits Organization Membership</h3>
             <p>Non Profits Organizations membership with essential benefits.</p>
             <a href="#np-modal" class="open-modal">View Benefits</a>
@@ -101,10 +102,10 @@
         <button class="close-modal">&times;</button>
         <h3>NP Membership Benefits</h3>
         <ul>
-            <li>Event invitations and discounts</li>
-            <li>Access to business training programs</li>
-            <li>Event invitations and discounts</li>
-            <li>Access to business training programs</li>
+            <li>Free access to community events and networking opportunities</li>
+            <li>Eligibility for specialized grants and funding programs</li>
+            <li>Promotion of non-profit initiatives through chamber platforms</li>
+            <li>Discounts on training workshops and consultation services</li>
         </ul>
     </dialog>    
 
@@ -112,10 +113,10 @@
         <button class="close-modal">&times;</button>
         <h3>Regular Membership Benefits</h3>
         <ul>
-            <li>Event invitations and discounts</li>
-            <li>Access to business training programs</li>
-            <li>Event invitations and discounts</li>
-            <li>Access to business training programs</li>
+            <li>Access to standard business networking events</li>
+            <li>Basic directory listing on the Chamber website</li>
+            <li>Invitations to annual trade fairs and expos</li>
+            <li>Discounts on business development workshops</li>
         </ul>
     </dialog>
 
@@ -123,10 +124,10 @@
         <button class="close-modal">&times;</button>
         <h3>Silver Membership Benefits</h3>
         <ul>
-            <li>Enhanced marketing support</li>
-            <li>Increased networking opportunities</li>
-            <li>Enhanced marketing support</li>
-            <li>Increased networking opportunities</li>
+            <li>Priority business listing on the Chamber directory</li>
+            <li>Access to exclusive networking events and trade shows</li>
+            <li>Enhanced marketing and advertising opportunities</li>
+            <li>Support for collaborative business projects and initiatives</li>
         </ul>
     </dialog>
 
@@ -134,10 +135,10 @@
         <button class="close-modal">&times;</button>
         <h3>Gold Membership Benefits</h3>
         <ul>
-            <li>Exclusive access to premium events</li>
-            <li>Full promotional support</li>
-            <li>Exclusive access to premium events</li>
-            <li>Full promotional support</li>
+            <li>Premium visibility and top placement in the business directory</li>
+            <li>Exclusive access to high-profile networking events</li>
+            <li>Comprehensive marketing and promotional support</li>
+            <li>Personalized business development consultations</li>
         </ul>
     </dialog>
        
