@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - Amahoro Stadium Ticket Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mark">
+    <meta name="description" content="The name “Amahoro Stadium Ticket Portal” directly connects the platform to the iconic Amahoro Stadium in Kigali, Rwanda, known for its rich sporting history.">
+    <meta property="og:title" content="Home - Amahoro Stadium Ticket Portal">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/preview.png">
+    <meta property="og:url" content="https://ndarama.github.io/wdd231/ticketing">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+ </head>
+<body>
+    <header>
+        <div class="logo"> <img src="images/logoweb.jpg" alt="Amahoro Stadium Logo"> </div>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/ticketing/">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/ticketing/eticketing.html">eTicket</a></li>
+                <li><a href="http://127.0.0.1:5500/ticketing/events.html">Events</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <!-- Main -->
+  <main>
+            <!-- Main Container for Events -->
+            <section class="events-page">
+                <h2>Upcoming Events</h2>
+                <div class="event-list" id="events-section">
+                <!-- Cards injected by JS -->
+                </div>
+            </section>
+
+            <!-- Modal Dialog -->
+            <div id="eventModal" class="modal">
+                <div class="modal-content">
+                <span class="close-btn" id="closeModal">&times;</span>
+                <!-- The large image in the modal -->
+                <img id="modalImage" class="modal-image" src="" alt="Event Image" />
+                <!-- Event details -->
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+                <p id="modallongDescription"></p>
+                <p><strong>Package:</strong> <span id="modalPackage"></span></p>
+                <p><strong>Price:</strong> <span id="modalbasePrice"></span></p>
+                </div>
+            </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | NDARAMA Mark | Kigali, Rwanda</p>
+    <p id="lastModified"></p>
+  </footer>
+
+  <script defer src="scripts/events.js"></script>
+  <script defer src="scripts/script.js"></script>
+</body>
+</html>

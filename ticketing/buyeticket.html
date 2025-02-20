@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Buy your Ticket- Amahoro Stadium Ticket Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mark">
+    <meta name="description" content="The name “Amahoro Stadium Ticket Portal” directly connects the platform to the iconic Amahoro Stadium in Kigali, Rwanda, known for its rich sporting history.">
+    <meta property="og:title" content="Buy your Ticket- Amahoro Stadium Ticket Portal">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/preview.png">
+    <meta property="og:url" content="https://ndarama.github.io/wdd231/ticketing/buyeticketing.html">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+ </head>
+<body>
+    <header>
+        <div class="logo"> <img src="images/logoweb.jpg" alt="Amahoro Stadium Logo"> </div>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/ticketing/">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/ticketing/eticketing.html">eTicket</a></li>
+                <li><a href="http://127.0.0.1:5500/ticketing/events.html">Events</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+      <div class="container">
+        <h2>Buy eTicket</h2>
+  
+        <!-- The form will submit to confirmation.html via GET -->
+        <form id="ticketForm" action="confirmation.html" method="GET">
+          
+          <!-- Ticket Category (radio buttons) -->
+          <label>Ticket Category:</label>
+          <div class="ticket-categories">
+            <label><input type="radio" name="ticketCategory" value="regular" checked> Regular ($50)</label>
+            <label><input type="radio" name="ticketCategory" value="economy"> Economy ($80)</label>
+            <label><input type="radio" name="ticketCategory" value="premium"> Premium ($120)</label>
+            <label><input type="radio" name="ticketCategory" value="vip"> VIP ($200)</label>
+          </div>
+          
+          <!-- Hidden input to carry total price to confirmation page -->
+          <input type="hidden" id="ticketPrice" name="ticketPrice" value="50" />
+  
+          <!-- User Info -->
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" required>
+  
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required>
+  
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+  
+          <label for="address">Address:</label>
+          <input type="text" id="address" name="address" required>
+          
+          <!-- Payment Method -->
+          <label>Payment Method:</label>
+          <div class="payment-methods">
+            <label><input type="radio" name="paymentMethod" value="visa" checked> Visa</label>
+            <label><input type="radio" name="paymentMethod" value="mastercard"> MasterCard</label>
+            <label><input type="radio" name="paymentMethod" value="ndarama"> NdaramaBank</label>
+          </div>
+          
+          <!-- Card Info -->
+          <label for="cardNumber">Card Number:</label>
+          <input type="text" id="cardNumber" name="cardNumber" placeholder="xxxx-xxxx-xxxx-xxxx" required>
+  
+          <label for="expiryDate">Expiration Date (MM/YY):</label>
+          <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+  
+          <label for="ccv">CCV:</label>
+          <input type="text" id="ccv" name="ccv" placeholder="123" required>
+  
+          <!-- Total Price Display -->
+          <div class="total-price" id="totalPrice">Total: $50</div>
+  
+          <!-- Buy Button -->
+          <button type="submit" class="submit-btn">Buy</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+        <p>
+         &copy; <span id="currentyear"></span> | NDARAMA Mark | Kigali, Rwanda
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script defer src="scripts/script.js"></script>
+    <script defer src="scripts/buy.js"></script>
+</body>
+</html>

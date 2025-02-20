@@ -1,0 +1,707 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #EBF5EE;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #246EB9;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #246EB9;
+}
+
+/* Reset & Basic Body */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #EBF5EE;
+    color: #333;
+  }
+  
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url('../images/stadium3.png') no-repeat center / cover;
+    color: white;
+    text-align: center;
+  }
+  
+  .hero-content {
+    flex: 3;
+  }
+  .hero-content h1 {
+    margin-bottom: 10px;
+  }
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+  .cta-button {
+    display: inline-block;
+    background-color: #ff9800;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  .cta-button:hover {
+    background-color: #e68900;
+  }
+  
+  /* FIFA Ranking */
+  .fifa-ranking {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: 20px;
+    color: #333;
+  }
+  .fifa-ranking h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .fifa-ranking ul {
+    list-style: none;
+    padding: 0;
+  }
+  .fifa-ranking li {
+    padding: 5px 0;
+  }
+  
+  /* Upcoming Matches */
+  .upcoming-matches {
+    padding: 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .upcoming-matches h2 {
+    margin-bottom: 20px;
+  }
+  .match-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .match {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 25%;
+    min-width: 280px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .match img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .match-card {
+    padding: 10px;
+  }
+  
+  /* Buttons */
+  .match-card button {
+    background-color: #ff9800;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  .match-card button:hover {
+    background-color: #e68900;
+  }
+  
+  /* Recent Results & Stadium Gallery */
+  .recent-results {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  .results-list,
+  .stadium-gallery {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+  }
+  .results-list h3 {
+    margin-top: 0;
+  }
+  .results-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .results-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  .results-list button {
+    background-color: #46892B;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  .results-list button:hover {
+    background-color: #35691B;
+  }
+  
+  /* Stadium Gallery */
+  .stadium-gallery {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .gallery-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  .gallery-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .gallery-image {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .gallery-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+  .gallery-nav.left {
+    left: 10px;
+  }
+  .gallery-nav.right {
+    right: 10px;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      text-align: left;
+    }
+    .fifa-ranking {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+    .recent-results {
+      flex-direction: column;
+      align-items: center;
+    }
+    .results-list,
+    .stadium-gallery {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+    .match {
+      width: 100%;
+    }
+  }
+  
+/* Team row layout */
+.team-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  /* Team logo styling */
+  .team-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+  
+  /* Container for team name & match form */
+  .team-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  /* Match form container */
+  .match-form {
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+  }
+  
+  /* Common styling for W, L, D squares */
+  .match-form span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px; /* Slightly rounded corners */
+  }
+  
+  /* Color codes for each result */
+  .result-w {
+    background-color: #4CAF50; /* Green for Win */
+  }
+  .result-l {
+    background-color: #F44336; /* Red for Loss */
+  }
+  .result-d {
+    background-color: #FFC107; /* Yellow for Draw */
+  }
+  
+/* -----------------------------------
+   Tickets & Squad Formation Section
+----------------------------------- */
+.tickets-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .tickets-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .ticket-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .ticket-card {
+    background-color: #EBF5EE;
+    border: 1px solid #ddd;
+    padding: 20px;
+    flex: 1 1 calc(25% - 40px);
+    min-width: 200px;
+    max-width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .ticket-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  }
+  
+  .ticket-icon {
+    font-size: 40px; /* Adjust icon size as needed */
+    color: #46892B;  /* Match your green button color or any accent color */
+    margin-bottom: 10px;
+  }
+  
+  /* Buy Button (as a link) */
+  .buy-button {
+    display: inline-block;
+    background-color: #46892B;
+    color: #fff;
+    padding: 10px 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buy-button:hover {
+    background-color: #35691B;
+  }
+
+  .container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  form input[type="text"],
+  form input[type="tel"],
+  form input[type="email"],
+  form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+  }
+  .ticket-categories {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+  }
+  .ticket-categories label {
+    font-weight: normal;
+  }
+  .ticket-categories input {
+    margin-right: 5px;
+  }
+  .payment-methods {
+    margin-top: 5px;
+    display: flex;
+    gap: 10px;
+  }
+  .payment-methods label {
+    font-weight: normal;
+  }
+  .submit-btn {
+    background-color: #46892B;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    display: block;
+  }
+  .submit-btn:hover {
+    background-color: #35691B;
+  }
+  .total-price {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .ticket-card {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+  
+  /* Squad Formation & Coach's Message */
+  .squad-coach-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px 20px;
+  }
+  
+  .pitch-formation,
+  .coach-message {
+    flex: 1 1 50%;
+    background-color: #EBF5EE;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  /* Pitch Formation */
+  .formation {
+    position: relative;
+    width: 100%;
+    height: 400px; /* approximate pitch height */
+    background-color: #5C965C; /* a green color for the pitch */
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .player {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    color: #333;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-weight: bold;
+  }
+  
+  /* Example positions for players. Adjust to fit your formation. */
+  .player1  { top:  5%;  left:  45%; }
+  .player2  { top: 20%;  left:  20%; }
+  .player3  { top: 20%;  left:  70%; }
+  .player4  { top: 35%;  left:  30%; }
+  .player5  { top: 35%;  left:  60%; }
+  .player6  { top: 50%;  left:  20%; }
+  .player7  { top: 50%;  left:  70%; }
+  .player8  { top: 65%;  left:  35%; }
+  .player9  { top: 65%;  left:  55%; }
+  .player10 { top: 80%;  left:  25%; }
+  .player11 { top: 80%;  left:  65%; }
+  
+  /* Coach's Message */
+  .coach-message h2 {
+    margin-top: 0;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .tickets-and-squad {
+      margin: 20px auto;
+      padding: 10px;
+    }
+    .squad-coach-container {
+      flex-direction: column;
+    }
+    .ticket-card {
+      flex: 1 1 100%;
+      min-width: auto;
+    }
+    .pitch-formation,
+    .coach-message {
+      flex: 1 1 100%;
+      margin-bottom: 20px;
+    }
+  }
+/* ----------------------------------------
+   Events Page Specific
+---------------------------------------- */
+/* Events Page Container */
+.events-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Event List Layout */
+.event-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Event Card */
+.event-card {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+  /* Subtle animation on hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.event-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+/* Event Image */
+.event-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* Title & Description spacing */
+.event-card h2 {
+  margin-bottom: 10px;
+}
+.event-card p {
+  margin-bottom: 15px;
+}
+
+/* More Button */
+.more-button {
+  background-color: #46892B;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.more-button:hover {
+  background-color: #35691B;
+}
+
+/* Modal Styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 999; /* Above everything */
+  left: 0; 
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.6); /* Overlay */
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 100px auto; /* Center in the screen */
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+  text-align: center;
+}
+
+/* Close Button (X) */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  color: #999;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close-btn:hover {
+  color: #666;
+}
+
+/* Modal Image */
+.modal-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .event-card {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #246EB9; /* Matches the header */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .match-list {
+        justify-content: center;
+    }
+    .match {
+        width: calc(33.333% - 20px);
+    }
+}
+
+@media (max-width: 1024px) {
+    .match {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .match {
+        width: 100%;
+    }
+    
+}
+@media (max-width: 768px) {
+    .stadium-gallery {
+        width: 100%;
+    }
+}

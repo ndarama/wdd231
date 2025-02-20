@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - Amahoro Stadium Ticket Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mark">
+    <meta name="description" content="The name “Amahoro Stadium Ticket Portal” directly connects the platform to the iconic Amahoro Stadium in Kigali, Rwanda, known for its rich sporting history.">
+    <meta property="og:title" content="Home - Amahoro Stadium Ticket Portal">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/preview.png">
+    <meta property="og:url" content="https://ndarama.github.io/wdd231/ticketing">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+ </head>
+<body>
+    <header>
+        <div class="logo"> <img src="images/logoweb.jpg" alt="Amahoro Stadium Logo"> </div>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/ticketing/">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/ticketing/eticketing.html">eTicket</a></li>
+                <li><a href="http://127.0.0.1:5500/ticketing/events.html">Events</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+            <section class="hero">
+                <div class="hero-content">
+                <h1>Upcoming Match</h1>
+                <p>Don’t miss out on the excitement!</p>
+                <button class="cta-button">Match Preview</button>
+                </div>
+                <div class="fifa-ranking">
+                <h2>FIFA Ranking</h2>
+                <ul id="ranking-list">
+                    <!-- Rankings loaded via JS -->
+                    <li>Loading...</li>
+                </ul>
+                </div>
+            </section>  
+            <!-- Upcoming Matches -->
+            <section class="upcoming-matches">
+                <h2>Upcoming Matches</h2>
+                <div class="match-list" id="match-list">
+                <!-- Dynamically loaded via JS -->
+                </div>
+                
+            </section>
+        
+            <!-- Recent Results & Stadium Gallery -->
+            <section class="recent-results">
+                <!-- Recent Results -->
+                <div class="results-list">
+                <h3>Recent Results</h3>
+                <ul id="results-list">
+                    <!-- Dynamically loaded via JS -->
+                </ul>
+                <div id="teams-container"></div>
+                </div>
+                    
+                <!-- Stadium Gallery -->
+                <div class="stadium-gallery">
+                <h3 class="gallery-title">Stadium Gallery</h3>
+                <div class="gallery-container">
+                    <img class="gallery-image" id="gallery-image" src="images/stadium1.jpg" alt="Stadium" />
+                    <button class="gallery-nav left" id="prevBtn">&#9664;</button>
+                    <button class="gallery-nav right" id="nextBtn">&#9654;</button>
+                </div>
+                </div>
+            </section>
+    </main>
+
+    <footer>
+        <p>
+         &copy; <span id="currentyear"></span> | NDARAMA Mark | Kigali, Rwanda
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script defer src="scripts/script.js"></script>
+    <script defer src="scripts/index20.js"></script>
+    <script defer src="scripts/teams.js"></script>
+</body>
+</html>

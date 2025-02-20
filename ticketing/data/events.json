@@ -1,0 +1,85 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "title": "Event 1",
+      "description": "Short info about Event 1",
+      "longDescription": "Short info about Event 4",
+      "image": "images/event1.png",
+      "package": "Standard Package",
+      "basePrice": 50
+    },
+    {
+      "id": 2,
+      "title": "Event 2",
+      "description": "Short info about Event 2",
+      "longDescription": "Short info about Event 4",
+      "image": "images/event2.png",
+      "package": "VIP Package",
+      "basePrice": 100
+    },
+    {
+      "id": 3,
+      "title": "Event 3",
+      "description": "Short info about Event 3",
+      "longDescription": "Short info about Event 4",
+      "image": "images/event3.png",
+      "package": "Basic Package",
+      "basePrice": 30
+    },
+    {
+      "id": 4,
+      "title": "Event 4",
+      "description": "Short info about Event 4",
+      "longDescription": "Short info about Event 4",
+      "image": "images/event4.png",
+      "package": "Standard Package",
+      "basePrice": 60
+    },
+    {
+      "id": 5,
+      "title": "Event 5",
+      "description": "Short info about Event 5",
+      "longDescription": "Short info about Event 4",
+      "image": "images/event5.png",
+      "package": "VIP Package",
+      "basePrice": 120
+    },
+    {
+      "id": 6,
+      "title": "Event 6",
+      "description": "Short info about Event 6",
+      "longDescription": "Short info about Event 4Short info about Event 4Short info about Event 4Short info about Event 4Short info about Event 4Short info about Event 4Short info about Event 4Short info about Event 4Short info about Event 4Short info about Event 4Short info about Event 4Short info about Event 4",
+      "image": "images/event6.png",
+      "package": "Basic Package",
+      "basePrice": 40
+    },
+    {
+      "id": 7,
+      "title": "Event 7",
+      "description": "Short info about Event 7",
+      "longDescription": "Short info about Event 4",
+      "image": "images/event7.png",
+      "package": "Standard Package",
+      "basePrice": 70
+    },
+    {
+      "id": 8,
+      "title": "Event 8",
+      "description": "Short info about Event 8",
+      "longDescription": "Short info about Event 4",
+      "image": "images/event8.png",
+      "package": "VIP Package",
+      "basePrice": 150
+    },
+    {
+      "id": 9,
+      "title": "Event 9",
+      "description": "Short info about Event 7",
+      "longDescription": "Short info about Event 4",
+      "image": "images/event9.png",
+      "package": "Standard Package",
+      "basePrice": 70
+    }
+  ]
+}

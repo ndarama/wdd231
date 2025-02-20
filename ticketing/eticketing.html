@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>eTicketing- Amahoro Stadium Ticket Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mark">
+    <meta name="description" content="The name “Amahoro Stadium Ticket Portal” directly connects the platform to the iconic Amahoro Stadium in Kigali, Rwanda, known for its rich sporting history.">
+    <meta property="og:title" content="eTickeitng - Amahoro Stadium Ticket Portal">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/preview.png">
+    <meta property="og:url" content="https://ndarama.github.io/wdd231/ticketing">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+/>
+ </head>
+<body>
+    <header>
+        <div class="logo"> <img src="images/logoweb.jpg" alt="Amahoro Stadium Logo"> </div>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/ticketing/">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/ticketing/eticketing.html">eTicket</a></li>
+                <li><a href="http://127.0.0.1:5500/ticketing/events.html">Events</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+<!-- Tickets & Squad Formation Section -->
+<section class="tickets-and-squad">
+    <!-- Ticket Categories -->
+    <div class="tickets-container">
+      <h2>Ticket Categories</h2>
+      <div class="ticket-cards">
+        <!-- Regular -->
+        <div class="ticket-card">
+          <!-- Icon (Font Awesome) -->
+          <i class="fa-solid fa-ticket-simple ticket-icon"></i>
+          <h3>Regular</h3>
+          <!-- Link to buyeticket.html -->
+          <a href="buyeticket.html" class="buy-button">Buy eTicket</a>
+        </div>
+    
+        <!-- Economy -->
+        <div class="ticket-card">
+            <i class="fa-solid fa-ticket-simple ticket-icon"></i>
+          <h3>Economy</h3>
+          <a href="buyeticket.html" class="buy-button">Buy eTicket</a>
+        </div>
+    
+        <!-- Premium -->
+        <div class="ticket-card">
+          <i class="fas fa-ticket-alt ticket-icon"></i>
+          <h3>Premium</h3>
+          <a href="buyeticket.html" class="buy-button">Buy eTicket</a>
+        </div>
+    
+        <!-- VIP -->
+        <div class="ticket-card">
+          <i class="fas fa-crown ticket-icon"></i> 
+          <!-- Example: a crown icon for VIP -->
+          <h3>VIP</h3>
+          <a href="buyeticket.html" class="buy-button">Buy eTicket</a>
+        </div>
+      </div>
+  
+    <!-- Squad Formation & Coach's Message -->
+    <div class="squad-coach-container">
+      <div class="pitch-formation">
+        <h2>Squad and Pitch Formation</h2>
+        <div class="formation">
+          <!-- Example player placeholders. Adjust positions & numbers as needed -->
+          <div class="player player1">1. Kabandana</div>
+          <div class="player player2">2</div>
+          <div class="player player3">3</div>
+          <div class="player player4">4</div>
+          <div class="player player5">5</div>
+          <div class="player player6">6</div>
+          <div class="player player7">7</div>
+          <div class="player player8">8</div>
+          <div class="player player9">9</div>
+          <div class="player player10">10</div>
+          <div class="player player11">11</div>
+        </div>
+      </div>
+  
+      <div class="coach-message">
+        <h2>Coach's Message</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam
+          velit, vulputate eu pharetra nec, mattis ac, blandit vel, elit.
+          Suspendisse potenti. Sed tincidunt urna sit amet ipsum vestibulum porta.
+          Integer pellentesque, velit vitae consequat dictum, elit lorem
+          pellentesque purus, a pretium neque metus in enim.
+        </p>
+        <br />
+        <h3>Head Coach</h3>
+        <p>
+          <!-- Example text or list of player names -->
+          Silvanov Mitrovic, SE
+        </p>
+      </div>
+    </div>
+  </section>
+  
+    </main>
+
+    <footer>
+        <p>
+         &copy; <span id="currentyear"></span> | NDARAMA Mark | Kigali, Rwanda
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script defer src="scripts/script.js"></script>
+    <script defer src="scripts/events.js"></script>
+</body>
+</html>

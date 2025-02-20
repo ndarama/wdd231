@@ -1,0 +1,49 @@
+{
+    "upcomingMatches": [
+      {
+        "id": 1,
+        "teams": "Rwanda vs Senegal",
+        "image": "images/rwasen.png",
+        "description": "Semi-final match. Don't miss out!"
+      },
+      {
+        "id": 2,
+        "teams": "Rwanda vs Morocco",
+        "image": "images/rwaegy.png",
+        "description": "Quarter-final showdown!"
+      },
+      {
+        "id": 3,
+        "teams": "Rwanda vs Kenya",
+        "image": "images/rwake.png",
+        "description": "Semi-final match. Don't miss out!"
+      }
+    ],
+    "recentResults": [
+      {
+        "teams": "Rwanda 2 - 0 South Africa",
+        "id": 1
+      },
+      {
+        "teams": "Benin 3 - 1 Rwanda",
+        "id": 2
+      },
+      {
+        "teams": "Burundi 2 - 1 Rwanda",
+        "id": 3
+      },
+      {
+        "teams": "Rwanda 5 - 1 Somalia",
+        "id": 4
+      },
+      {
+        "teams": "Rwanda 2 - 0 South Africa",
+        "id": 5
+      },
+      {
+        "teams": "Benin 3 - 1 Rwanda",
+        "id": 6
+      }
+    ]
+  }
+  
